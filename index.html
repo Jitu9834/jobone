@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JobOne — Every job. One search.</title>
+<meta name="description" content="JobOne helps job seekers discover opportunities in one place. Search smarter, apply directly on the original job website.">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#172033;background:#f6f8fc}
+header{padding:18px 6%;display:flex;justify-content:space-between;align-items:center;background:white;border-bottom:1px solid #e7eaf1}
+.logo{font-size:25px;font-weight:800;color:#2358d5;letter-spacing:-1px}.logo span{color:#15213b}
+nav a{color:#59657c;text-decoration:none;margin-left:20px;font-size:14px}
+.hero{padding:70px 6% 58px;text-align:center;background:linear-gradient(135deg,#eaf1ff,#f8faff)}
+h1{font-size:clamp(35px,7vw,62px);letter-spacing:-2px;margin:0 0 16px}.blue{color:#2459d6}
+p{color:#66738b;line-height:1.65}.hero p{max-width:620px;margin:0 auto 28px;font-size:17px}
+.search{display:flex;gap:10px;max-width:700px;margin:auto;background:white;padding:9px;border:1px solid #dfe5f0;border-radius:14px;box-shadow:0 12px 35px #234b9910}
+input{flex:1;min-width:0;padding:14px;border:0;outline:0;font-size:15px}button{border:0;border-radius:10px;background:#2459d6;color:white;font-weight:700;padding:14px 22px;cursor:pointer}
+main{max-width:1000px;margin:48px auto;padding:0 20px}.section{text-align:center;margin-bottom:30px}.section h2{font-size:29px;margin-bottom:8px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}.card{background:white;border:1px solid #e5eaf2;border-radius:15px;padding:22px}.card h3{margin:0 0 8px}.card p{margin:5px 0}.tag{display:inline-block;background:#edf3ff;color:#2459d6;border-radius:30px;padding:5px 10px;font-size:12px;margin:10px 0}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin:35px 0}.feature{padding:22px;background:white;border:1px solid #e5eaf2;border-radius:14px}
+.notice{background:#fff8e5;border:1px solid #f2dfaa;color:#74571a;padding:14px;border-radius:12px;font-size:13px}
+footer{text-align:center;padding:30px;color:#8791a5;font-size:13px}
+@media(max-width:550px){nav a{margin-left:10px}.search{flex-direction:column}.search button{width:100%}.hero{padding:55px 5%}}
+</style></head><body>
+<header><div class="logo">Job<span>One</span></div><nav><a href="#how">How it works</a><a href="#about">About</a></nav></header>
+<section class="hero"><h1>Every job.<br><span class="blue">One search.</span></h1>
+<p>Discover opportunities from job sources in one simple place. Find roles that fit and apply directly on the original job website.</p>
+<div class="search"><input id="role" placeholder="Job title or keyword (e.g. Customer Support)"><input id="place" placeholder="Location (e.g. Pune)" style="max-width:190px"><button onclick="searchJobs()">Search jobs</button></div>
+<p id="msg" style="font-size:13px;margin-top:14px"></p></section>
+<main><section id="how"><div class="section"><h2>Simple job discovery</h2><p>One place to begin your next career move.</p></div>
+<div class="features"><div class="feature"><h3>🔎 Search in one place</h3><p>Explore job opportunities by role and location.</p></div><div class="feature"><h3>↗ Apply at source</h3><p>Continue to the original employer or job platform to apply.</p></div><div class="feature"><h3>📌 Built for job seekers</h3><p>A straightforward experience focused on finding opportunities.</p></div></div></section>
+<section id="about"><div class="section"><h2>About JobOne</h2><p>JobOne is an early-stage job discovery project. We are working toward bringing permitted job listings together with useful search tools.</p></div><div class="notice"><b>Launch preview:</b> JobOne is under development. Live job listings and automated imports are not enabled on this preview yet. No sample vacancy here is presented as a real job.</div></section></main>
+<footer>© 2026 JobOne · Every job. One search.</footer>
+<script>function searchJobs(){document.getElementById('msg').textContent='Live job search is coming soon. This preview is not connected to a job feed yet.'}</script>
+</body></html>
